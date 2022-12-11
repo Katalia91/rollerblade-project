@@ -81,8 +81,12 @@ body {
     text-transform: uppercase;
     opacity: 0.3;
 }
+.text-center {
+    text-align: center;
+}
 .img-responsive {
     max-width: 100%;
+    display: block;
 }
 footer {
     background-image: linear-gradient(rgba(0, 0, 0, 0.95), rgba(0, 0, 0, 0.7)), url("../images/rollerblade-detail.jpg");
@@ -109,21 +113,65 @@ footer ul {
     grid-gap: 64px;
 }
 section {
-    max-width: 1200px;
+    max-width: 100%;
     margin: 0 auto;
-    padding:  100px 0;
+    padding:  100px;
+}
+main h4 { 
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1;
+    color: #272044;
+    margin: 0px;
+}
+main h5 {
+    margin: 0px;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 20px;
+    color: #272044;
+}
+.btn {
+    display: block;
+    color: white;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 21px;
+    text-align: center;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    background: #462CB3;
+    text-decoration: none;
+    padding: 16px 32px;
 }
 .grid img {
     aspect-ratio: 1 / 1;
     object-fit: cover;
     object-position: center;
 }
-.grid-3-columns {
+.grid-2-columns {
+    grid-template-columns: 1fr 1fr;
+}
+.grid-2-columns-no-gap {
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 0px;
+}
+.grid-3-columns, .grid-3-columns-even {
     grid-template-columns: 1fr 1fr 1fr;
     padding: 0px;
 }
-.grid-2-columns {
-    grid-template-columns: 1fr 1fr;
+.card {
+    background-color: white;
+    margin: 30px auto;
+}
+.card-body {
+    padding: 30px;
+}
+.card-footer {
+    padding: 0 30px 30px 30px;
+}
+section.secondary {
+    background: #F8F8F8;
 }
 @media (max-width: 900px) {
     header {
