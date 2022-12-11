@@ -44,9 +44,10 @@ body {
     }
     
     header {
-        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/rollerblade-detail.jpg");
+        background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.5)), url("../images/rollerskates-3.jpg");
         background-size: cover;
         background-repeat: no-repeat;
+        background-position: bottom;
         color: white;
         text-align: center;
         padding: 250px 0;
@@ -67,6 +68,31 @@ body {
 .container {
     max-width: 1440px;
     margin: 0 auto;
+}
+footer {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.95), rgba(0, 0, 0, 0.7)), url("../images/rollerblade-detail.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    text-align: left;
+    margin: 0 auto;
+    padding: 100px 170px;
+}
+footer a {
+    color: white;
+}
+footer li {
+    font-weight: 400;
+}
+footer ul {
+    list-style: none;
+    padding-left: 0px;
+}
+.footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 64px;
 }
 @media (max-width: 900px) {
     header {
