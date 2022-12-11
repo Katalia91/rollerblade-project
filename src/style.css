@@ -65,6 +65,11 @@ body {
         text-transform: uppercase;
         text-decoration: none;
         display: inline-block;
+        transition: all 250ms ease-in-out;
+    }
+    header a:hover {
+        color: white;
+        background: #960f52;
     }
 .container {
     max-width: 1440px;
@@ -103,10 +108,14 @@ footer a {
 }
 footer li {
     font-weight: 400;
+    opacity: 0.6;;
 }
 footer ul {
     list-style: none;
     padding-left: 0px;
+}
+footer p {
+    opacity: 0.6;
 }
 .grid {
     display: grid;
@@ -143,6 +152,13 @@ main h5 {
     background: #960f52;
     text-decoration: none;
     padding: 16px 32px;
+    transition: all 250ms ease-in-out;
+    border: 2px solid #960f52;
+}
+.btn:hover {
+    background-color: white;
+    color: #960f52;
+    border: 2px solid #960f52;
 }
 .grid img {
     aspect-ratio: 1 / 1;
@@ -179,6 +195,36 @@ main h5 {
 }
 section.secondary {
     background: #F8F8F8;
+}
+.theme-button {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+}
+.theme-button.btn {
+    padding: 5px 10px;
+    font-size: 12px;
+}
+.theme-button.btn:hover {
+    cursor: pointer;
+}
+/* Dark theme */
+.dark section:not(footer>section) {
+    background: black;
+    color: white;
+}
+.dark .card {
+    color: white;
+    background: rgba(39,36,53,0.74)
+}
+.dark h4, .dark h5 {
+    color: white;
+}
+.dark .extra-information {
+    color: white;
+}
+.dark .primary a {
+    color: white;
 }
 @media (max-width: 1200px) {
     header {
