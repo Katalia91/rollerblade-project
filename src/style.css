@@ -89,10 +89,6 @@ body {
 .text-center {
     text-align: center;
 }
-.img-responsive {
-    width: 100%;
-    display: block;
-}
 footer {
     background-image: linear-gradient(rgba(0, 0, 0, 0.95), rgba(0, 0, 0, 0.7)), url("../images/rollerblade-detail.jpg");
     background-size: cover;
@@ -160,10 +156,21 @@ main h5 {
     color: #960f52;
     border: 2px solid #960f52;
 }
-.grid img {
+.img-responsive {
+    width: 100%;
+    display: block;
     aspect-ratio: 1 / 1;
     object-fit: cover;
     object-position: center;
+    transition: all 250ms ease-in-out;
+}
+.img-responsive:hover {
+    filter:  sepia(100%);
+    transform:  scale(2, 2) translate(50px, -30px);
+    cursor: zoom-in;
+}
+.primary .img-responsive:hover {
+    transform: scale(1.1, 1.1);
 }
 .grid-2-columns {
     grid-template-columns: 1fr 1fr;
